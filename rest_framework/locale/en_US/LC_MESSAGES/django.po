@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-30 16:23+0000\n"
+"POT-Creation-Date: 2015-01-30 16:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 msgid "You do not have permission to perform this action."
 msgstr ""
 
-#: exceptions.py:93
+#: exceptions.py:93 views.py:77
 msgid "Not found."
 msgstr ""
 
@@ -307,6 +307,10 @@ msgstr ""
 
 #: versioning.py:160
 msgid "Invalid version in query parameter."
+msgstr ""
+
+#: views.py:81
+msgid "Permission denied."
 msgstr ""
 
 #: authtoken/serializers.py:20
