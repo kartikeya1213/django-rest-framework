@@ -112,6 +112,10 @@
                     <a href="../6-viewsets-and-routers/">6 - Viewsets and routers</a>
                   </li>
                   
+                  <li >
+                    <a href="../7-schemas-and-client-libraries/">7 - Schemas and client libraries</a>
+                  </li>
+                  
                 </ul>
               </li>
                 
@@ -292,6 +296,10 @@
                   
                   <li >
                     <a href="../../topics/3.3-announcement/">3.3 Announcement</a>
+                  </li>
+                  
+                  <li >
+                    <a href="../../topics/3.4-announcement/">3.4 Announcement</a>
                   </li>
                   
                   <li >
@@ -486,7 +494,7 @@ urlpatterns = [
 ]
 </code></pre>
 <p>Because we're using viewsets instead of views, we can automatically generate the URL conf for our API, by simply registering the viewsets with a router class.</p>
-<p>Again, if we need more control over the API URLs we can simply drop down to using regular class based views, and writing the URL conf explicitly.</p>
+<p>Again, if we need more control over the API URLs we can simply drop down to using regular class-based views, and writing the URL conf explicitly.</p>
 <p>Finally, we're including default login and logout views for use with the browsable API.  That's optional, but useful if your API requires authentication and you want to use the browsable API.</p>
 <h2 id="settings"><a class="toclink" href="#settings">Settings</a></h2>
 <p>We'd also like to set a few global settings.  We'd like to turn on pagination, and we want our API to only be accessible to admin users.  The settings module will be in <code>tutorial/settings.py</code></p>
