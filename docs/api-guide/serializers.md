@@ -159,7 +159,9 @@ When deserializing data, you always need to call `is_valid()` before attempting 
 
 Each key in the dictionary will be the field name, and the values will be lists of strings of any error messages corresponding to that field.  The `non_field_errors` key may also be present, and will list any general validation errors. The name of the `non_field_errors` key may be customized using the `NON_FIELD_ERRORS_KEY` REST framework setting.
 
-When deserializing a list of items, errors will be returned as a list of dictionaries representing each of the deserialized items.
+When deserializing a list of items, errors are returned as a dictionary keyed by the indexes of invalid items. Valid items are omitted from the dictionary.
+
+To temporarily use the list-based format from versions before REST framework 3.18, set `LIST_SERIALIZER_ERRORS_AS_DICT` to `False`. This format includes an empty dictionary for each valid item and is deprecated. It will be removed in REST framework 3.20.
 
 #### Raising an exception on invalid data
 
